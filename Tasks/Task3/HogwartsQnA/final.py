@@ -10,7 +10,6 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-load_dotenv()
 API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
 repo_id = "mistralai/Mistral-7B-Instruct-v0.2"
 CHROMA_PATH = "chroma"
